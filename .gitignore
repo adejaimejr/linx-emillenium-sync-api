@@ -43,3 +43,6 @@ processed_files.md
 *.swp
 *.swo
 *~
+
+# Outros
+import_json_mongo.zip
