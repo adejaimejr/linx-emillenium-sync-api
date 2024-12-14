@@ -98,12 +98,15 @@ linx-emillenium-sync-api/
 
 | Variável | Descrição | Exemplo |
 |----------|-----------|---------|
-| MONGO_URI | URI de conexão MongoDB | mongodb://localhost:27017 |
-| API_USERNAME | Usuário da API | user |
-| API_PASSWORD | Senha da API | pass |
-| ENVIRONMENT | Ambiente (test/production) | test |
-| LOG_LEVEL | Nível de log | INFO |
-| LOG_MODE | Modo de log | SINGLE |
+| MONGO_URI | URI de conexão MongoDB | mongodb://localhost:27017/database |
+| API_USERNAME | Usuário da API e-Millenium | seu.usuario |
+| API_PASSWORD | Senha da API e-Millenium | sua.senha |
+| ENVIRONMENT | Ambiente de execução (test/production) | production |
+| LOG_LEVEL | Nível de detalhamento dos logs | INFO |
+| LOG_MODE | Modo de armazenamento dos logs | SINGLE |
+| API_URL | URL base da API e-Millenium | https://api.emillenium.com.br |
+| MONGO_DATABASE | Nome do banco de dados MongoDB | emillenium_sync |
+| MONGO_COLLECTION | Nome da coleção padrão | lancamentos |
 
 ## 📊 Monitoramento
 
@@ -127,12 +130,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👥 Autores
 
-* **Seu Nome** - *Desenvolvimento Inicial* - [seu-usuario](https://github.com/seu-usuario)
-
-## 🎁 Agradecimentos
-
-* Linx pelo suporte à API
-* Comunidade MongoDB
-* Contribuidores do projeto
+* **Adejaime Junior** - *Desenvolvimento* - [adejaimejr](https://github.com/adejaimejr)
 
 ## ⌨️ Desenvolvido com ❤️ por [i92Tech](https://i92tecnologia.com.br)
