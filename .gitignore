@@ -8,6 +8,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -41,10 +43,3 @@ processed_files.md
 *.swp
 *.swo
 *~
-
-# Sistema Operacional
-.DS_Store
-Thumbs.db
-
-# Arquivos de bk
-import_json_mongo.zip
