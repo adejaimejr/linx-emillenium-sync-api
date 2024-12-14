@@ -28,30 +28,30 @@ Sistema de sincronização de dados entre a API do e-Millenium (Linx) e MongoDB,
 ```bash
 git clone https://github.com/seu-usuario/linx-emillenium-sync-api.git
 cd linx-emillenium-sync-api
-
+```
 
 2. Instale as dependências:
-
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 3. Configure o arquivo `.env`:
-env
+```env
 MONGO_URI=sua_uri_mongodb
 API_USERNAME=seu_usuario
 API_PASSWORD=sua_senha
 ENVIRONMENT=test
 LOG_LEVEL=INFO
 LOG_MODE=SINGLE
-
+MONGO_DATABASE=emillenium_sync
+```
 
 ## 💻 Uso
 
 Execute o script principal:
-bash
+```bash
 python start.py
-
+```
 
 ### Configurações de Log
 
@@ -64,15 +64,16 @@ python start.py
   - `MULTIPLE`: Cria arquivos separados por execução
 
 ## 🗂 Estrutura do Projeto
+```
 linx-emillenium-sync-api/
-├── start.py # Script principal
-├── get_json.py # Obtém dados da API
-├── sync.py # Sincroniza com MongoDB
-├── log_config.py # Configuração de logs
-├── requirements.txt # Dependências
-├── .env # Configurações
-└── logs/ # Diretório de logs
-
+├── start.py           # Script principal
+├── get_json.py        # Obtém dados da API
+├── sync.py           # Sincroniza com MongoDB
+├── log_config.py     # Configuração de logs
+├── requirements.txt  # Dependências
+├── .env             # Configurações
+└── logs/            # Diretório de logs
+```
 
 ## 🔄 Fluxo de Dados
 

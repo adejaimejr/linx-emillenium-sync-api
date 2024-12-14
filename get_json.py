@@ -59,6 +59,7 @@ def main():
     mongo_uri = os.getenv('MONGO_URI')
     username = os.getenv('API_USERNAME')
     password = os.getenv('API_PASSWORD')
+    mongo_database = os.getenv('MONGO_DATABASE')
 
     try:
         client = MongoClient(mongo_uri)
@@ -90,7 +91,7 @@ def main():
                 logger.error(f"  ✗ URL da API não configurada para {collection_name}")
                 continue
 
-            db = client['transbyshop']
+            db = client[mongo_database]
             collection = db[collection_name]
 
             max_trans_id = get_max_trans_id(collection)

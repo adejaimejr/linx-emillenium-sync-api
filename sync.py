@@ -105,6 +105,7 @@ def main():
     load_dotenv()
     mongo_uri = os.getenv('MONGO_URI')
     environment = os.getenv('ENVIRONMENT', 'test').lower()
+    mongo_database = os.getenv('MONGO_DATABASE')
 
     try:
         client = MongoClient(mongo_uri)
@@ -135,7 +136,7 @@ def main():
                 logger.warning(f"⚠ Chave não encontrada para a coleção {base_collection_name}")
                 continue
 
-            db = client['transbyshop']
+            db = client[mongo_database]
             collection = db[collection_name]
 
             file_path = os.path.join(json_directory, filename)
