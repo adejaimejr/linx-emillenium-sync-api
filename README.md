@@ -135,5 +135,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 * Comunidade MongoDB
 * Contribuidores do projeto
 
----
-⌨️ com ❤️ por [seu-nome](https://github.com/seu-usuario)
+## ⌨️ Desenvolvido com ❤️ por [i92Tech](https://i92tecnologia.com.br)
