@@ -46,3 +46,11 @@ processed_files.md
 
 # Outros
 import_json_mongo.zip
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env*
+!.env.exemple

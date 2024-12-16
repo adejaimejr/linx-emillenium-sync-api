@@ -14,6 +14,9 @@ Sistema de sincronização de dados entre a API do e-Millenium (Linx) e MongoDB,
 - Controle de arquivos processados
 - Tratamento de datas e campos específicos
 - Modo de teste e produção configuráveis
+- Processamento em lote de dados
+- Sistema de retry para falhas de conexão
+- Validação automática de dados
 
 ## 📋 Pré-requisitos
 
@@ -62,6 +65,30 @@ python start.py
 - `LOG_MODE`: Define o modo de armazenamento dos logs
   - `SINGLE`: Mantém logs em arquivos únicos (application.log/debug.log)
   - `MULTIPLE`: Cria arquivos separados por execução
+
+## 💡 Boas Práticas
+
+- Mantenha o arquivo `.env` sempre local e nunca o compartilhe
+- Use o modo `test` antes de executar em produção
+- Monitore os logs regularmente
+- Faça backup do MongoDB antes de sincronizações grandes
+- Configure adequadamente os timeouts da API
+
+## ❗ Tratamento de Erros
+
+O sistema possui tratamento para:
+- Falhas de conexão com a API
+- Erros de autenticação
+- Problemas de formato de dados
+- Timeouts de conexão
+- Erros de validação de dados
+
+## 🔍 Debugging
+
+Para debug mais detalhado:
+1. Configure `LOG_LEVEL=DEBUG` no `.env`
+2. Verifique os logs em `logs/debug.log`
+3. Use o modo de teste com `ENVIRONMENT=test`
 
 ## 🗂 Estrutura do Projeto
 ```
